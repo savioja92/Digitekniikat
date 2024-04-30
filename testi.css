@@ -1,0 +1,166 @@
+* {
+  box-sizing: border-box; /* ***-merkki tarkoittaa että asetus tulee kaikille näkyviin*/
+}
+html {
+  background-color: #f1f1f1;
+}
+
+body {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+}
+
+.h1 {
+  margin: 17px 0 17px 0;
+  text-align: center;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  text-decoration: underline;
+}
+
+.h2 {
+  text-align: center;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  background-color: rgb(255, 87, 87);
+}
+
+#p1 {
+  text-align: center;
+}
+
+/*Tyyliasetukset kartalle*/
+.kartta {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+  margin-left: 90px;
+}
+
+.kartta iframe {
+  left: 0;
+  top: 0;
+  height: 90%;
+  width: 90%;
+  position: absolute;
+}
+
+#helsinki {
+  /*koko html-dokumentista näkee sivun levelyden, maksimileveyden pystyy kattomaan siitä ja miinustamaan navipalkin leveyden jollon saa sivun leveyteen mahtuvan kuvan. Esim. 1477-300=1177*/
+  /* width: 100%; */
+  max-width: 1177px;
+  margin: 0px 0px 0px 200px;
+  text-align: center;
+}
+
+#barbosa {
+  width: 60%;
+  max-width: 1177px;
+  margin: 0px 0px 0px 250px;
+  text-align: center;
+}
+
+#kotkot {
+  width: 60%;
+  max-width: 1177px;
+  margin: 0px 0px 0px 250px;
+  text-align: center;
+}
+
+/*sidebar styling*/
+/*marginaalin arvot annetaan kellon suuntaisesti alkaen ylhäältä*/
+
+#logo {
+  margin: 80px 50px 0px 30px;
+  /*position:relative;*/
+}
+
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 300px;
+  background-color: #f1f1f1;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 30px;
+  text-decoration: none;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-size: 25px;
+}
+
+.sidebar a.active {
+  background-color: rgb(255, 87, 87);
+  color: white;
+}
+
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+div.content {
+  margin: 0px 0px 0px 300px;
+  padding: 1px 0px;
+  background-color: #dedede;
+}
+
+#kokemus {
+  width: 3.5rem;
+  height: 3.5rem;
+  transform: translate(-10px, 15px);
+}
+
+#silmät {
+  width: 3.5rem;
+  height: 4rem;
+  transform: translate(-10px, 23px);
+}
+
+#syö {
+  width: 3.5rem;
+  height: 4rem;
+  transform: translate(-10px, 20px);
+}
+
+#footer {
+  margin: 0px 0px 0px 300px;
+  padding: 50px;
+  background-color: rgb(255, 87, 87);
+  color: white;
+  text-align: center;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+}
+
+/*sidebar responsiveness*/
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {
+    float: left;
+  }
+  div.content {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
