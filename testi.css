@@ -20,11 +20,18 @@ body {
 }
 
 .h2 {
-  text-align: center;
-  font-family: "Bebas Neue", sans-serif;
-  font-weight: 400;
-  font-size: 30px;
-  background-color: rgb(255, 87, 87);
+    text-align: center;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    background-color: rgb(255, 87, 87);
+    padding-bottom: 20px;
+    padding-top: 50px;
+    margin: 0px;
+    margin-top: -10px;
+    border-top-style: solid;
+
+    line-height: 0px;  /* TÄSSÄ ON GÄPIN POISTO */
 }
 
 #p1 {
