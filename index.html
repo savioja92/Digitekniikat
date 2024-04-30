@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+    <meta name="description" content="Opiskelijan Helsinki-päivä">
+    <meta name="keywords" content="budjetti, opiskelija, tapahtuma, ruoka, nähtävyydet, juoma, tekemistä helsingissä pienellä budjetilla">
+    <meta name="authors" content="Niclas Nilsson, Niko Savioja, Silja Torvasti">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+    <title>Etusivu</title>
+<link rel="stylesheet" href="testi.css">
+ 
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+</style>
+ 
+</head>
+<body>
+ 
+<div class="sidebar">
+  <a class="active" href="#home">ETUSIVU</a>
+  <a href="#syo"><span id=""><img src="pizza.svg" id="syö"></span>SYÖ & JUO</a>
+  <a href="#koe"><span id=""><img src="kokemus.svg" id="kokemus"></span>KOE</a>
+  <a href="#nae"><span id=""><img src="silmät.svg" id="silmät"></span>NÄE</a>
+  
+ 
+  <img src="hki1.svg" alt="logo" id="logo">
+</div>
+ 
+ 
+<!--Tän "content divin alle tulee kaikki leipäteksti nettisivulla"-->
+<div class="content">
+  <h1 class="h1">Tervetuloa opiskelijan Helsinki-kierrokselle! &#9996</h1>
+  <img src ="helsinki.jpg" alt="Ilmakuva Helsingistä" id="helsinki" class="">
+ 
+ 
+  <h2 class="h2">Suunnittele reitti kartalla</h2>
+  <p id="p1">Olemme suunnitelleet sinulle täydellisen Helsinki-päivän, seuraat vain kartan ohjeita.<br>Halutessasi voit kiertää kohteet valitussa järjestyksessä, mutta vastuu on sinulla itselläsi!
+  </p>
+ 
+  <div class="kartta">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.068431058602!2d24.959430776951507!3d60.19671664129126!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4692099d6fb3622b%3A0xb9dfffae187457de!2sPub%20Paavali!5e0!3m2!1sfi!2sfi!4v1713262232621!5m2!1sfi!2sfi"
+    width="800" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" id="kartta" >
+    </iframe>
+</div>  
+</div>
+
+<section id="syo">
+  <div class="content">
+    <h1 class="h1">Tervetuloa Syö & Juo osioon! &#9996</h1>
+    <!-- <img src ="helsinki.jpg" alt="Ilmakuva Helsingistä" id="helsinki" class="imagehelsinki"> -->
+    <p id="paikka1">Paikka #1</p>
+    <img src="barbosa.jpg" alt="Kuva pizzapaikasta nimeltä Barbosa" id="barbosa">
+    <p id="paikka2">Paikka #2</p>
+    <img src="kotkot.jpg" alt="Kuva ravintolasta nimeltä KotKot" id="kotkot">
+  </div>
+</section>
+ 
+<section id="koe">
+  <div class="content">
+    <h1 class="h1">Tervetuloa Koe Osioon &#9996</h1>
+    <!-- <img src ="helsinki.jpg" alt="Ilmakuva Helsingistä" id="helsinki" class="imagehelsinki"> -->
+    <p id="koe1">Paikka #1</p>
+    <img src="kauppatori.jpg" alt="Kuva pizzapaikasta nimeltä Barbosa" id="barbosa">
+    <p id="paikka2">Paikka #2</p>
+    <img src="sompasauna.jpg" alt="Kuva ravintolasta nimeltä KotKot" id="kotkot">
+  </div>
+</section>
+<section id="nae">
+  <div class="content">
+    <h1 class="h1">Tervetuloa Näe Osioon &#9996</h1>
+    <!-- <img src ="helsinki.jpg" alt="Ilmakuva Helsingistä" id="helsinki" class="imagehelsinki"> -->
+    <p id="koe1">Paikka #1</p>
+    <img src="suomenlinna.jpg" alt="Kuva pizzapaikasta nimeltä Barbosa" id="barbosa">
+    <p id="paikka2">Paikka #2</p>
+    <img src="kaupunginmuseo.jpg" alt="Kuva ravintolasta nimeltä KotKot" id="kotkot">
+  </div>
+</section>
+<!--<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.068431058602!2d24.959430776951507!3d60.19671664129126!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4692099d6fb3622b%3A0xb9dfffae187457de!2sPub%20Paavali!5e0!3m2!1sfi!2sfi!4v1713262232621!5m2!1sfi!2sfi" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>-->
+ 
+<footer id="footer">
+  <script>
+    document.getElementById('footer').innerHTML = new Date().getHours() >= 12 ? 'Hyvää iltapäivää' : 'Hyvää huomenta';
+  </script>
+ 
+<!--document.getElementById('greeting').innerHTML = new Date().getHours() >= 12 ? 'Hyvää iltaa' : 'Hyvää huomenta'; TEE AAMULLA: tän lähde on osoitteesta: https://stackoverflow.com/questions/26879997/changing-text-depending-on-current-time
+  document.getElementById("footer").innerHTML= new Date().getHours() >= 12 ? 'Hyvää iltapäivää' : 'Hyvää huomenta';-->
+ 
+  </footer>
+</body>
+</html>
