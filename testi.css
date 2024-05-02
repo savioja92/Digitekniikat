@@ -27,8 +27,22 @@ body {
   background-color: rgb(255, 87, 87);
 }
 
+/* FONTIT TEXTEIHIN */
 #p1 {
   text-align: center;
+  font-family: Inclusive Sans;
+}
+
+#paikka1 {
+  font-family: Inclusive Sans;
+}
+
+#koe1 {
+  font-family: Inclusive Sans;
+}
+
+#paikka2 {
+  font-family:Inclusive Sans ;
 }
 
 /*Tyyliasetukset kartalle*/
